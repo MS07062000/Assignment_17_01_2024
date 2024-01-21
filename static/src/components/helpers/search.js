@@ -9,8 +9,6 @@ export const search = async (query, category) => {
       headers: {
         "Content-Type": "application/json",
       },
-      mode: "cors",
-      credentials: "include",
     });
 
     if (response.status === 200) {
