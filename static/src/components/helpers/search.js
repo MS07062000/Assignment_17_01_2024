@@ -1,6 +1,6 @@
 export const search = async (query, category) => {
   try {
-    const url = `${import.meta.env.VITE_API_URL}/getImages?query=${query}${
+    const url = `${"https://assignment-17-01-2024-qnei.vercel.app"}/getImages?query=${query}${
       category != null ? `&category=${category}` : ""
     }`;
 
@@ -12,7 +12,7 @@ export const search = async (query, category) => {
     });
 
     if (response.status === 200) {
-      return response;
+      return response.json();
     } else {
       throw new Error("Server responded with an error:", response.status);
     }

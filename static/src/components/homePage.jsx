@@ -5,7 +5,6 @@ import SearchForm from "./searchForm";
 import SearchResult from "./searchResult";
 import Category from "./category";
 import { search } from "./helpers/search";
-// import { response } from "./helpers/response";
 
 const HomePage = () => {
   const [isSearching, setIsSearching] = useState(false);
