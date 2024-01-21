@@ -1,6 +1,6 @@
 export const search = async (query, category) => {
   try {
-    const url = `${"https://assignment-17-01-2024-qnei.vercel.app"}/getImages?query=${query}${
+    const url = `${import.meta.env.VITE_API_URL}/getImages?query=${query}${
       category != null ? `&category=${category}` : ""
     }`;
 
